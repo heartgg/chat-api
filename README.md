@@ -16,3 +16,30 @@ The chat-api is an API with `send_message` and `read_messages` endpoints. `send_
 3. Paste the previously saved `uri` into `create_config.js`
 4. Rename `create_config.js` to `config.js`
 5. Run app.js using node (run `node app.js` in project terminal)
+## API Usage
+```
+POST /send_message
+Eg. http://localhost:3000/send_message
+
+{
+    "chat_id": "chatroom1"
+    "sender": "adam",
+    "message": "This is just a test message..."
+}
+
+```
+```
+GET /read_messages
+Eg. http://localhost:3000/read_messages
+
+{
+    "chat_id": "chatroom1"
+    "sender": "adam" // optional
+}
+=>
+[{
+    "sender": "adam",
+    "message": "This is just a test message..."
+}]
+
+```
