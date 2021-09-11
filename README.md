@@ -1,2 +1,18 @@
 # chat-api
-init
+The chat-api is an API with `send_message` and `read_messages` endpoints. `send_message` requests the user to specify a unique chatroom identifier (chat_id), sender name, and the message in order to save it in the database. `read_messages` requests a chat_id and optionally the sender's name in order to fetch the messages contained in the unique chatroom.
+## Pre-requisistes
+* Node.js with npm
+* MongoDB Atlas Account
+## Database Setup
+1. Log into your Atlas account
+2. Create a new cluster
+    1. Choose allowed IPs
+    2. Create a database account
+    3. Choose `Connect your application`
+    4. Copy the provided `uri`
+## Local Setup
+1. Download this project
+2. Run `npm install` in the project folder
+3. Paste the previously saved `uri` into `create_config.js`
+4. Rename `create_config.js` to `config.js`
+5. Run app.js using node (run `node app.js` in project terminal)
