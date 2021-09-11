@@ -15,7 +15,7 @@ The chat-api is an API with `send_message` and `read_messages` endpoints. `send_
 2. Run `npm install` in the project directory
 3. Create a `.env` file in your project directory
 4. Add `URI=your_uri_here` to the `.env` file and save it
-5. Run app.js using node (run `npm start` in project terminal)
+5. Run `npm start` in project terminal
 ## API Usage
 ```
 POST /send_message
