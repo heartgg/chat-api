@@ -16,6 +16,8 @@ The chat-api is an API with `send_message` and `read_messages` endpoints. `send_
 3. Create a `.env` file in your project directory
 4. Add `URI=your_uri_here` to the `.env` file and save it
 5. Run `npm start` in project terminal
+## Heroku
+You can try the API by interacting with `https://acm-chat-api.herokuapp.com/`
 ## API Usage
 ```
 POST /send_message
