@@ -5,6 +5,7 @@ const express = require('express'),
     port = process.env.PORT || 3000;
 
 app.listen(port);
+console.log('App is listening on port ' + port);
 
 app.use(express.urlencoded({extended: true})); 
 app.use(express.json());
