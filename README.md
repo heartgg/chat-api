@@ -36,7 +36,9 @@ Eg. http://localhost:3000/read_messages
     "chat_id": "chatroom1"
     "sender": "adam" // optional
 }
+
 =>
+
 [{
     "sender": "adam",
     "message": "This is just a test message..."
