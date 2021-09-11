@@ -12,9 +12,9 @@ The chat-api is an API with `send_message` and `read_messages` endpoints. `send_
     4. Copy the provided `uri`
 ## Local Setup
 1. Download this project
-2. Run `npm install` in the project folder
-3. Paste the previously saved `uri` into `create_config.js`
-4. Rename `create_config.js` to `config.js`
+2. Run `npm install` in the project directory
+3. Create a `.env` file in your project directory
+4. Add `URI=your_uri_here` to the `.env` file and save it
 5. Run app.js using node (run `npm start` in project terminal)
 ## API Usage
 ```

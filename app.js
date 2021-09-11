@@ -1,4 +1,4 @@
-const { uri } = require('./config.json');
+require('dotenv').config();
 const { MongoClient } = require('mongodb');
 const express = require('express'),
     app = express(),
@@ -20,7 +20,7 @@ app.get('/read_messages', async (req, res) => {
     res.send(status);
 });
 
-const client = new MongoClient(uri);
+const client = new MongoClient(process.env.URI);
 
 async function sendMsg (chat_id, sender, message) {
     try {
