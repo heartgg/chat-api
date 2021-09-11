@@ -51,3 +51,32 @@ Eg. http://localhost:3000/read_messages
 }]
 
 ```
+## API Test Snippet (node.js)
+```js
+const http = require('http');
+
+var data = JSON.stringify({
+    chat_id: 'chatroom1',
+    sender: 'anonymous',
+    message: 'This is a test message...'
+});
+
+var options = {
+    hostname: 'acm-chat-api.herokuapp.com',
+    path: '/send_message',
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+        'Content-Length': data.length
+    }
+}
+
+var req = http.request(options, res => {
+    res.on('data', d => {
+        console.log(`${d}`)
+    });
+});
+
+req.write(data);
+req.end();
+```
