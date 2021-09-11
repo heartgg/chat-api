@@ -30,8 +30,8 @@ async function sendMsg (chat_id, sender, message) {
             'sender': sender,
             'message': message
         }
-        await collection.insertOne(data);
-        console.log('Inserted a message entry.');
+        const document = await collection.insertOne(data);
+        return `${document.insertedId}`;
     } catch (error) {
         console.error(error);
         return `ERROR: ${error}`;

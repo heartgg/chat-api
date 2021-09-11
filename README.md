@@ -27,6 +27,10 @@ Eg. http://localhost:3000/send_message
     "message": "This is just a test message..."
 }
 
+=>
+
+db_object_id
+
 ```
 ```
 GET /read_messages
