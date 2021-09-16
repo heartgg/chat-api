@@ -18,6 +18,8 @@ The chat-api is an API with `send_message` and `read_messages` endpoints. `send_
 5. Run `npm start` in project terminal
 ## Heroku
 You can try the API by interacting with `https://acm-chat-api.herokuapp.com/`
+
+*Apps on Heroku tend to sleep after being idle for some time which means it may take a while to initially process an API request.*
 ## API Usage
 ```
 POST /send_message
